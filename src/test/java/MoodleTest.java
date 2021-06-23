@@ -1,11 +1,8 @@
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.Keys;
-
-
 import java.util.concurrent.TimeUnit;
 
 
@@ -26,10 +23,14 @@ public class MoodleTest {
         webDriver.findElement(By.xpath("//*[@id=\"searchBtn\"]")).click();
         webDriver.findElement(By.className("form-control")).sendKeys("розробка додатків");
         webDriver.findElement(By.className("form-control")).sendKeys(Keys.ENTER);
+
+
+        }
+
     }
 
 
 
-    }
+
 
 
